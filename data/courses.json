@@ -1,0 +1,140 @@
+{
+  "fundamentals": {
+    "track": "fundamentals",
+    "slug": "fundamentals",
+    "name": "Fundamentals of Programming",
+    "shortName": "Fundamentals of Programming",
+    "icon": "fa-solid fa-laptop-code",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&q=85&auto=format&fit=crop",
+    "duration": "3 Months",
+    "mode": "Online / Offline",
+    "price": "3000 EGP",
+    "oldPrice": "4500 EGP",
+    "discount": "33.33%",
+    "discountAmount": "1500 EGP",
+    "level": "Level 1",
+    "skills": [
+      "Programming Logic",
+      "Algorithms & Flowcharts",
+      "Variables & Data Types",
+      "Problem Solving",
+      "Practical Projects"
+    ],
+    "levels": 3
+  },
+  "web": {
+    "track": "web",
+    "slug": "web",
+    "name": "Web Development",
+    "shortName": "Web Development",
+    "icon": "fa-solid fa-code",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=85&auto=format&fit=crop",
+    "duration": "3 Months",
+    "mode": "Online / Offline",
+    "price": "3000 EGP",
+    "oldPrice": "4500 EGP",
+    "discount": "33.33%",
+    "discountAmount": "1500 EGP",
+    "level": "Level 1",
+    "skills": [
+      "HTML & CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Backend Basics",
+      "Projects"
+    ],
+    "levels": 3
+  },
+  "python": {
+    "track": "python",
+    "slug": "python",
+    "name": "Python Programming",
+    "shortName": "Python Programming",
+    "icon": "fa-brands fa-python",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1400&q=85&auto=format&fit=crop",
+    "duration": "3 Months",
+    "mode": "Online / Offline",
+    "price": "3000 EGP",
+    "oldPrice": "4500 EGP",
+    "discount": "33.33%",
+    "discountAmount": "1500 EGP",
+    "level": "Level 1",
+    "skills": [
+      "Python Fundamentals",
+      "OOP",
+      "Problem Solving",
+      "Data Handling",
+      "Projects"
+    ],
+    "levels": 3
+  },
+  "ai": {
+    "track": "ai",
+    "slug": "ai",
+    "name": "Artificial Intelligence",
+    "shortName": "Artificial Intelligence",
+    "icon": "fa-solid fa-brain",
+    "image": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1400&q=85&auto=format&fit=crop",
+    "duration": "3 Months",
+    "mode": "Online / Offline",
+    "price": "3000 EGP",
+    "oldPrice": "4500 EGP",
+    "discount": "33.33%",
+    "discountAmount": "1500 EGP",
+    "level": "Level 1",
+    "skills": [
+      "AI Fundamentals",
+      "Machine Learning",
+      "Data Preparation",
+      "Model Basics",
+      "Projects"
+    ],
+    "levels": 3
+  },
+  "cybersecurity": {
+    "track": "cybersecurity",
+    "slug": "cybersecurity",
+    "name": "Cybersecurity",
+    "shortName": "Cybersecurity",
+    "icon": "fa-solid fa-shield-halved",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1400&q=85&auto=format&fit=crop",
+    "duration": "3 Months",
+    "mode": "Online / Offline",
+    "price": "3000 EGP",
+    "oldPrice": "4500 EGP",
+    "discount": "33.33%",
+    "discountAmount": "1500 EGP",
+    "level": "Level 1",
+    "skills": [
+      "Security Fundamentals",
+      "Networking Basics",
+      "Threat Awareness",
+      "Web Security",
+      "Practical Labs"
+    ],
+    "levels": 3
+  },
+  "software": {
+    "track": "software",
+    "slug": "software",
+    "name": "Software Engineering",
+    "shortName": "Software Engineering",
+    "icon": "fa-solid fa-diagram-project",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1400&q=85&auto=format&fit=crop",
+    "duration": "3 Months",
+    "mode": "Online / Offline",
+    "price": "3000 EGP",
+    "oldPrice": "4500 EGP",
+    "discount": "33.33%",
+    "discountAmount": "1500 EGP",
+    "level": "Level 1",
+    "skills": [
+      "Requirements",
+      "UML",
+      "Software Design",
+      "Architecture",
+      "Project Planning"
+    ],
+    "levels": 3
+  }
+}

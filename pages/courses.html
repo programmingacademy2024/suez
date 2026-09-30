@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <script>
+   tailwind.config={theme:{extend:{colors:{brand:{orange:'#f58220',orangeHover:'#e07110',green:'#8ec63f',darkGreen:'#1b4332',bgLight:'#f8faf7'}}}}}
+  </script>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Suez Programming Academy - Courses
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script src="../js/config.js">
+  </script>
+ </head>
+ <body class="text-gray-800 flex flex-col items-center min-h-screen p-2 sm:p-4 md:p-6 lg:p-8">
+  <div class="page-container">
+   <div id="siteNavbar">
+   </div>
+   <main>
+    <section class="page-hero section">
+     <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+       <span class="badge">
+        <i class="fa-solid fa-layer-group">
+        </i>
+        <span>
+         COURSES
+        </span>
+       </span>
+       <h1 class="text-4xl sm:text-5xl font-black text-black mt-4">
+        Our Learning Tracks
+       </h1>
+       <p class="text-sm text-gray-500 leading-7 mt-5 max-w-xl">
+        Choose a learning track, select your level, view the course details, then enroll through the academy's official Google Form.
+       </p>
+       <div class="flex flex-wrap gap-3 mt-6">
+        <a class="btn-primary" href="#tracks">
+         EXPLORE TRACKS
+        </a>
+        <button class="btn-secondary" data-register-course="">
+         REGISTER
+        </button>
+       </div>
+      </div>
+      <div class="relative rounded-3xl overflow-hidden hero-photo bg-white">
+       <img alt="Programming students learning" class="w-full h-[280px] sm:h-[380px] object-cover" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&amp;q=85&amp;auto=format&amp;fit=crop"/>
+       <div class="absolute inset-x-0 bottom-0 p-6 course-overlay text-white">
+        <p class="text-xs font-bold uppercase tracking-wider">
+         Suez Programming Academy
+        </p>
+        <p class="text-2xl font-black mt-1">
+         Learn. Build. Become.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section bg-white" id="tracks">
+     <div class="max-w-6xl mx-auto">
+      <div class="mb-8">
+       <span class="text-[10px] font-black tracking-widest text-brand-orange">
+        LEARNING CATALOG
+       </span>
+       <h2 class="text-3xl font-black mt-1">
+        Our Learning Tracks
+       </h2>
+       <p class="text-sm text-gray-500 mt-3 max-w-2xl">
+        A track is a group of levels. Each level is a course the student can view and register for.
+       </p>
+      </div>
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6" id="trackGrid">
+      </div>
+     </div>
+    </section>
+    <section class="section bg-white border-t border-gray-100">
+     <div class="max-w-6xl mx-auto">
+      <div class="mb-8">
+       <span class="text-[10px] font-black tracking-widest text-brand-orange">
+        MORE PROGRAMS
+       </span>
+       <h2 class="text-3xl font-black mt-1">
+        Professional Programs
+       </h2>
+       <p class="text-sm text-gray-500 mt-3">
+        The official registration form also includes these academy programs.
+       </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6" id="additionalGrid">
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="border-t px-5 sm:px-10 py-7 text-xs text-gray-400 flex flex-col sm:flex-row justify-between gap-2">
+    <span>
+     &copy; 2026 Suez Programming Academy
+    </span>
+    <span>
+     Learn. Build. Become.
+    </span>
+   </footer>
+  </div>
+  <script src="../js/app.js">
+  </script>
+  <script>
+   document.addEventListener('spa:ready', async () => {
+      const response = await fetch('../data/tracks.json');
+      const data = await response.json();
+      const courses = window.SPA_COURSES || {};
+      const levelNames = ['Level 1', 'Level 2', 'Level 3'];
+      const trackGrid = document.getElementById('trackGrid');
+      const additionalGrid = document.getElementById('additionalGrid');
+
+      trackGrid.innerHTML = data.mainTracks.map(track => {
+        const course = courses[track.courseKey];
+        return `
+          <article class="card overflow-hidden">
+            <div class="relative h-48 overflow-hidden">
+              <img src="${course.image}" alt="${course.name}" class="w-full h-full object-cover course-image">
+              <span class="absolute top-4 left-4 pill bg-white">${course.name}</span>
+            </div>
+            <div class="p-6">
+              <div class="icon-box"><i class="${course.icon}"></i></div>
+              <h3 class="text-xl font-black mt-4">${course.name}</h3>
+              <p class="text-xs text-gray-500 leading-6 mt-2">${track.description}</p>
+              <div class="space-y-2 mt-5">
+                ${levelNames.map((level, index) => `
+                  <div class="flex items-center justify-between gap-3 border border-gray-100 rounded-xl p-3">
+                    <div>
+                      <p class="font-black text-sm">${level}</p>
+                      <p class="text-[11px] text-gray-400">${course.duration} · ${course.mode}</p>
+                    </div>
+                    <button class="btn-secondary shrink-0" data-view-course="${course.slug}" data-level="${index + 1}">VIEW COURSE</button>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </article>`;
+      }).join('');
+
+      additionalGrid.innerHTML = data.additionalPrograms.map(item => {
+        const course = courses[item.courseKey];
+        return `
+          <article class="card p-6">
+            <div class="icon-box"><i class="${course.icon}"></i></div>
+            <h3 class="text-xl font-black mt-4">${course.name}</h3>
+            <p class="text-xs text-gray-500 leading-6 mt-2">Three progressive levels with practical learning and projects.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              ${levelNames.map(level => `<span class="pill">${level}</span>`).join('')}
+            </div>
+            <button class="btn-secondary w-full mt-5" data-view-course="${course.slug}">VIEW COURSE</button>
+          </article>`;
+      }).join('');
+
+      document.dispatchEvent(new CustomEvent('spa:dynamicRendered'));
+
+      document.querySelectorAll('[data-view-course]').forEach(button => {
+        button.addEventListener('click', () => {
+          const level = button.dataset.level || 1;
+          const course = courses[button.dataset.viewCourse];
+          localStorage.setItem('spaSelectedLevel', `Level ${level}`);
+          window.openCourse(course.slug);
+        });
+      });
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <title>Suez Programming Academy - About</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f58220',
+              green: '#8ec63f',
+              darkGreen: '#1b4332'
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Styles -->
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- Site Configuration -->
+  <script src="../js/config.js"></script>
+</head>
+
+<body class="flex justify-center min-h-screen p-2 sm:p-4 md:p-6">
+
+  <div class="page-container">
+
+    <!-- Navbar -->
+    <div id="siteNavbar"></div>
+
+    <main>
+
+      <!-- =====================================================
+           HERO / INSTRUCTOR
+      ====================================================== -->
+      <section class="page-hero section">
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-[260px_1fr] gap-9 items-center">
+
+          <!-- Instructor Image -->
+          <div class="relative rounded-3xl overflow-hidden">
+
+            <img
+              src="../assets/img/instructor.jpg"
+              alt="Dr. Soliman - Programming Instructor"
+              class="w-full h-72 object-cover"
+            />
+
+            <div class="absolute inset-x-0 bottom-0 p-4 course-overlay text-white">
+              <p class="text-xs font-bold">
+                Suez Programming Academy
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Instructor Introduction -->
+          <div>
+
+            <span class="badge">
+              MEET YOUR INSTRUCTOR
+            </span>
+
+            <h1 class="text-4xl sm:text-5xl font-black mt-4">
+              Dr. Soliman
+            </h1>
+
+            <p class="text-brand-darkGreen font-bold text-sm mt-2">
+              Programming & Software Engineering Instructor | 6+ Years Teaching Experience
+            </p>
+
+            <p class="text-sm text-gray-500 leading-7 mt-5" data-i18n="about_intro">
+              A programming and information technology instructor with
+              <strong class="text-gray-700">6+ years of teaching experience</strong>
+              across both online and offline learning environments.
+              The academy focuses on practical programming education,
+              structured learning, real-world projects, and career-oriented
+              technical skills.
+            </p>
+
+            <p class="text-sm text-gray-500 leading-7 mt-3" data-i18n="about_academic">
+              With an academic background in Information Technology and a
+              <strong class="text-gray-700">Master's degree completed in 2026</strong>,
+              the teaching approach combines academic foundations with
+              practical software development experience.
+            </p>
+
+            <a
+              class="btn-primary inline-flex mt-6"
+              href="register.html"
+            >
+              JOIN THE ACADEMY
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           EXPERIENCE & ACADEMIC PROFILE
+      ====================================================== -->
+      <section class="section">
+
+        <div class="max-w-6xl mx-auto">
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- Teaching Experience -->
+            <div class="card p-6">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                6+ Years
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Teaching experience in programming and information
+                technology through online and offline training.
+              </p>
+
+            </div>
+
+
+            <!-- Master's Degree -->
+            <div class="card p-6">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Master's Degree
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Master's degree in Information Technology,
+                completed in 2026.
+              </p>
+
+            </div>
+
+
+            <!-- Information Technology -->
+            <div class="card p-6">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Information Technology
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Academic background in Information Technology with
+                programming, web development and database expertise.
+              </p>
+
+            </div>
+
+
+            <!-- Practical Learning -->
+            <div class="card p-6">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Practical Learning
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Learning through examples, exercises, projects and
+                practical software development tasks.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           AREAS OF EXPERTISE
+      ====================================================== -->
+      <section class="section bg-[#f8faf7]">
+
+        <div class="max-w-6xl mx-auto">
+
+          <div class="text-center mb-8">
+
+            <span class="badge">
+              AREAS OF EXPERTISE
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl font-black mt-4">
+              What You Can Learn
+            </h2>
+
+            <p class="text-sm text-gray-500 leading-7 mt-3 max-w-2xl mx-auto">
+              The academy combines programming fundamentals with
+              practical development and software engineering concepts.
+            </p>
+
+          </div>
+
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- Programming -->
+            <div class="card p-6 bg-white">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Programming
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Programming fundamentals, problem solving,
+                algorithms and modern programming languages.
+              </p>
+
+            </div>
+
+
+            <!-- Web Development -->
+            <div class="card p-6 bg-white">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Web Development
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                HTML, CSS, JavaScript, PHP, JSON and practical
+                web application development.
+              </p>
+
+            </div>
+
+
+            <!-- Software Engineering -->
+            <div class="card p-6 bg-white">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Software Engineering
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Requirements analysis, UML, system modeling,
+                design and structured software development.
+              </p>
+
+            </div>
+
+
+            <!-- Databases -->
+            <div class="card p-6 bg-white">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-database"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Databases
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                SQL, MySQL, SQL Server, SQLite, PostgreSQL
+                and database design concepts.
+              </p>
+
+            </div>
+
+
+            <!-- Python -->
+            <div class="card p-6 bg-white">
+
+              <div class="icon-box">
+                <i class="fa-brands fa-python"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Python
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Python programming from fundamentals to
+                practical problem solving and application development.
+              </p>
+
+            </div>
+
+
+            <!-- Research -->
+            <div class="card p-6 bg-white">
+
+              <div class="icon-box">
+                <i class="fa-solid fa-flask"></i>
+              </div>
+
+              <h3 class="font-black mt-4">
+                Research
+              </h3>
+
+              <p class="text-xs text-gray-500 leading-6 mt-2">
+                Structured technical thinking, academic research
+                and technology-focused problem solving.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           ACADEMIC BACKGROUND
+      ====================================================== -->
+      <section class="section">
+
+        <div class="max-w-5xl mx-auto card p-7 sm:p-9">
+
+          <span class="badge">
+            ACADEMIC BACKGROUND
+          </span>
+
+          <h2 class="text-3xl font-black mt-4">
+            Academic Foundation
+          </h2>
+
+          <p class="text-sm text-gray-500 leading-7 mt-4 max-w-3xl">
+            The academy is built on an academic foundation in
+            Information Technology, supported by continuous technical
+            training and practical teaching experience.
+          </p>
+
+
+          <div class="grid sm:grid-cols-2 gap-5 mt-7">
+
+            <!-- Master's -->
+            <div class="bg-[#f8faf7] rounded-xl p-5 border">
+
+              <div class="flex items-start gap-4">
+
+                <div class="icon-box shrink-0">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+
+                  <p class="font-black">
+                    Master's Degree
+                  </p>
+
+                  <p class="text-xs text-gray-500 mt-1">
+                    Information Technology
+                  </p>
+
+                  <p class="text-xs text-brand-darkGreen font-bold mt-2">
+                    Completed — 2026
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- Bachelor's -->
+            <div class="bg-[#f8faf7] rounded-xl p-5 border">
+
+              <div class="flex items-start gap-4">
+
+                <div class="icon-box shrink-0">
+                  <i class="fa-solid fa-university"></i>
+                </div>
+
+                <div>
+
+                  <p class="font-black">
+                    Bachelor of Computers &amp; Information
+                  </p>
+
+                  <p class="text-xs text-gray-500 mt-1">
+                    Information Technology Department
+                  </p>
+
+                  <p class="text-xs text-brand-darkGreen font-bold mt-2">
+                    Suez University — 2017–2021
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           TEACHING PHILOSOPHY
+      ====================================================== -->
+      <section class="section bg-[#f8faf7]">
+
+        <div class="max-w-5xl mx-auto card p-7 sm:p-9">
+
+          <span class="badge">
+            OUR MISSION
+          </span>
+
+          <h2 class="text-3xl font-black mt-4">
+            Learn with structure. Build with purpose.
+          </h2>
+
+          <p class="text-sm text-gray-500 leading-7 mt-4">
+            The goal is not simply to teach programming syntax.
+            Students should understand how and why things work,
+            practice what they learn, and gradually transform
+            their knowledge into real software projects.
+          </p>
+
+
+          <div class="grid sm:grid-cols-3 gap-4 mt-7">
+
+            <!-- Clarity -->
+            <div class="bg-white rounded-xl p-5 border">
+
+              <i class="fa-solid fa-lightbulb text-brand-orange text-xl"></i>
+
+              <p class="font-black mt-3">
+                Clarity
+              </p>
+
+              <p class="text-xs text-gray-500 mt-1">
+                Clear explanations and organized technical material.
+              </p>
+
+            </div>
+
+
+            <!-- Practice -->
+            <div class="bg-white rounded-xl p-5 border">
+
+              <i class="fa-solid fa-laptop-code text-brand-orange text-xl"></i>
+
+              <p class="font-black mt-3">
+                Practice
+              </p>
+
+              <p class="text-xs text-gray-500 mt-1">
+                Exercises, problem solving and project-based learning.
+              </p>
+
+            </div>
+
+
+            <!-- Progress -->
+            <div class="bg-white rounded-xl p-5 border">
+
+              <i class="fa-solid fa-chart-line text-brand-orange text-xl"></i>
+
+              <p class="font-black mt-3">
+                Progress
+              </p>
+
+              <p class="text-xs text-gray-500 mt-1">
+                A structured learning path that grows with your skills.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           EXPERIENCE HIGHLIGHT
+      ====================================================== -->
+      <section class="section">
+
+        <div class="max-w-5xl mx-auto">
+
+          <div class="card p-7 sm:p-9">
+
+            <div class="grid md:grid-cols-[1fr_auto] gap-8 items-center">
+
+              <div>
+
+                <span class="badge">
+                  TEACHING EXPERIENCE
+                </span>
+
+                <h2 class="text-3xl font-black mt-4">
+                  From concepts to real projects.
+                </h2>
+
+                <p class="text-sm text-gray-500 leading-7 mt-4">
+                  With six years of teaching experience across
+                  online and offline environments, the academy is
+                  designed around a practical learning approach:
+                  understand the concept, practice it, apply it,
+                  and build something with it.
+                </p>
+
+              </div>
+
+
+              <div class="text-center md:text-right">
+
+                <div class="text-5xl font-black text-brand-orange">
+                  6+
+                </div>
+
+                <p class="text-xs font-bold text-gray-500 mt-1">
+                  YEARS OF TEACHING
+                </p>
+
+                <p class="text-xs text-gray-400 mt-1">
+                  Online &amp; Offline
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           FINAL CTA
+      ====================================================== -->
+      <section
+        class="section"
+        id="page-final-cta"
+      >
+
+        <div
+          class="max-w-5xl mx-auto card p-7 sm:p-9 flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+
+          <div>
+
+            <span class="badge">
+              NEXT STEP
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl font-black mt-3">
+              Start your learning journey.
+            </h2>
+
+            <p class="text-sm text-gray-500 leading-7 mt-2 max-w-2xl">
+              Explore the available tracks and choose the learning
+              path that matches your goals and current level.
+            </p>
+
+          </div>
+
+
+          <div class="flex flex-wrap gap-3 shrink-0">
+
+            <a
+              class="btn-secondary"
+              href="courses.html"
+            >
+              VIEW COURSES
+            </a>
+
+            <a
+              class="btn-primary"
+              href="register.html"
+            >
+              JOIN THE ACADEMY
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t px-5 sm:px-10 py-7 text-xs text-gray-400 flex justify-between">
+
+      <span>
+        &copy; 2026 Suez Programming Academy
+      </span>
+
+      <span>
+        Learn. Build. Become.
+      </span>
+
+    </footer>
+
+  </div>
+
+
+  <!-- Application JavaScript -->
+  <script src="../js/app.js"></script>
+
+</body>
+
+</html>

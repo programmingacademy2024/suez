@@ -1,0 +1,39 @@
+{
+  "mainTracks": [
+    {
+      "id": "web",
+      "courseKey": "web",
+      "name": "Web Development",
+      "description": "Build websites and practical web applications from fundamentals to advanced projects."
+    },
+    {
+      "id": "python",
+      "courseKey": "python",
+      "name": "Python Programming",
+      "description": "Start with programming logic, then progress through Python, OOP and projects."
+    },
+    {
+      "id": "ai",
+      "courseKey": "ai",
+      "name": "Artificial Intelligence",
+      "description": "Build a practical foundation in AI, machine learning and intelligent systems."
+    }
+  ],
+  "additionalPrograms": [
+    {
+      "id": "fundamentals",
+      "courseKey": "fundamentals",
+      "name": "Fundamentals of Programming"
+    },
+    {
+      "id": "cybersecurity",
+      "courseKey": "cybersecurity",
+      "name": "Cybersecurity"
+    },
+    {
+      "id": "software",
+      "courseKey": "software",
+      "name": "Software Engineering"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+
+{
+  "strings": {
+    "Home": "الرئيسية",
+    "Courses": "الكورسات",
+    "About": "من نحن",
+    "Contact": "تواصل معنا",
+    "JOIN THE ACADEMY": "انضم إلى الأكاديمية",
+    "العربية": "العربية",
+    "English": "English",
+
+    "Our Learning Tracks": "مساراتنا التعليمية",
+    "Choose a learning track, select your level, view the course details, then enroll through the academy's official Google Form.": "اختر المسار التعليمي، ثم المستوى، واطّلع على تفاصيل الكورس، وبعدها سجّل من خلال نموذج Google الرسمي للأكاديمية.",
+    "EXPLORE TRACKS": "استكشف المسارات",
+    "REGISTER": "تسجيل",
+
+    "LEARNING CATALOG": "الكتالوج التعليمي",
+    "A track is a group of levels. Each level is a course the student can view and register for.": "المسار مجموعة من المستويات، وكل مستوى هو كورس يمكن للطالب الاطلاع على تفاصيله والتسجيل فيه.",
+    "MORE PROGRAMS": "برامج إضافية",
+    "Professional Programs": "البرامج المتخصصة",
+    "The official registration form also includes these academy programs.": "نموذج التسجيل الرسمي يتضمن هذه البرامج أيضًا.",
+
+    "VIEW COURSE": "عرض الكورس",
+    "VIEW ALL COURSES": "عرض كل الكورسات",
+    "ENROLL NOW": "سجّل الآن",
+    "BACK TO COURSES": "العودة إلى الكورسات",
+    "COURSE DETAILS": "تفاصيل الكورس",
+    "WHAT YOU'LL LEARN": "ماذا ستتعلم",
+    "Course Skills": "مهارات الكورس",
+    "COURSE CONTENT": "محتوى الكورس",
+    "Progressive Learning": "تعلم تدريجي",
+    "COURSE": "الكورس",
+
+    "Registration is completed through the academy's official Google Form.": "يتم التسجيل من خلال نموذج Google الرسمي للأكاديمية.",
+    "Build practical skills through clear lessons, exercises and projects.": "طوّر مهارات عملية من خلال دروس واضحة وتمارين ومشروعات.",
+    "Structured lessons, practice and project work.": "دروس منظمة وتدريب عملي ومشروعات تطبيقية.",
+    "Course not found": "الكورس غير موجود",
+
+    "Duration:": "المدة:",
+    "Mode:": "النظام:",
+    "Price:": "السعر:",
+    "Level 1": "المستوى الأول",
+    "Level 2": "المستوى الثاني",
+    "Level 3": "المستوى الثالث",
+    "3 Months": "3 أشهر",
+    "Online / Offline": "أونلاين / أوفلاين",
+    "4500 EGP": "4500 جنيه مصري",
+
+    "Fundamentals of Programming": "أساسيات البرمجة",
+    "Web Development": "تطوير المواقع",
+    "Python Programming": "برمجة Python",
+    "Artificial Intelligence": "الذكاء الاصطناعي",
+    "Cybersecurity": "الأمن السيبراني",
+    "Software Engineering": "هندسة البرمجيات",
+
+    "Programming Logic": "منطق البرمجة",
+    "Algorithms & Flowcharts": "الخوارزميات ومخططات التدفق",
+    "Variables & Data Types": "المتغيرات وأنواع البيانات",
+    "Problem Solving": "حل المشكلات",
+    "Practical Projects": "مشروعات عملية",
+
+    "HTML & CSS": "HTML و CSS",
+    "JavaScript": "JavaScript",
+    "Responsive Design": "التصميم المتجاوب",
+    "Backend Basics": "أساسيات Backend",
+    "Projects": "مشروعات",
+
+    "Python Fundamentals": "أساسيات Python",
+    "OOP": "البرمجة كائنية التوجه",
+    "Data Handling": "التعامل مع البيانات",
+
+    "AI Fundamentals": "أساسيات الذكاء الاصطناعي",
+    "Machine Learning": "تعلم الآلة",
+    "Data Preparation": "تجهيز البيانات",
+    "Model Basics": "أساسيات النماذج",
+
+    "Security Fundamentals": "أساسيات الأمن",
+    "Networking Basics": "أساسيات الشبكات",
+    "Threat Awareness": "الوعي بالتهديدات",
+    "Web Security": "أمن الويب",
+    "Practical Labs": "معامل تطبيقية",
+
+    "Requirements": "تحليل المتطلبات",
+    "UML": "UML",
+    "Software Design": "تصميم البرمجيات",
+    "Architecture": "معمارية البرمجيات",
+    "Project Planning": "تخطيط المشروعات",
+
+    "Three progressive levels with practical learning and projects.": "ثلاثة مستويات متدرجة مع تعلم عملي ومشروعات تطبيقية.",
+
+    "Learn. Build.": "تعلّم. كود. برمج.",
+    "Become.": "🎓💪💻🌐",
+    "Suez Programming Academy provides practical programming training designed to help you learn the fundamentals, build real projects, and develop the skills you need to grow in the technology field.":"تقدم أكاديمية السويس للبرمجة تدريبًا عمليًا في مجال البرمجة، مصممًا لمساعدتك على إتقان الأساسيات، وبناء مشاريع حقيقية، وتطوير المهارات التي تحتاجها للنمو والنجاح في مجال التكنولوجيا.",
+    "Suez Programming Academy": "أكاديمية السويس للبرمجة",
+    "SUEZ": "السويس",
+    "Programming Code": "Programming Code",
+    "What materials can you": "ماذا ستتعلم؟",
+    "study?":"🎓",
+
+
+    "You will be given access to over 60 programming technologies with 2000 material lists, and will continue to grow with new material uploads.": "ستحصل على إمكانية الوصول إلى أكثر من 60 تقنية ومجالًا في البرمجة، بالإضافة إلى أكثر من 2000 مادة تعليمية، مع استمرار إضافة محتوى جديد.",
+
+    "All Materials": "جميع المحتويات",
+    "Fundamentals": "أساسيات البرمجة",
+    "Web Frontend": "تطوير واجهات الويب",
+    "Backend & DB": "البرمجة الخلفية وقواعد البيانات",
+    "Mobile & API": "تطبيقات الهاتف وواجهات API",
+
+    "New": "جديد",
+    "Get 33.33% Off all Courses": "خصم 33.33% على جميع الكورسات",
+    "Best Academy": "أكاديمية متميزة",
+    "Awards": "جوائز وتكريمات",
+    "Our Happy Students": "طلابنا",
+
+    "User": "طالب",
+    "Students": "طلاب",
+    "Student": "طالب",
+
+    "MEET YOUR INSTRUCTOR": "تعرّف على المدرب",
+    "Dr. Soliman": "د. سليمان",
+    "Programming & Software Engineering Instructor": "مدرب البرمجة وهندسة البرمجيات",
+
+    "The academy focuses on explaining programming and software engineering concepts in a practical, structured way, using examples, exercises and project-based learning.": "تركز الأكاديمية على شرح مفاهيم البرمجة وهندسة البرمجيات بطريقة عملية ومنظمة، باستخدام الأمثلة والتمارين والتعلم القائم على المشروعات.",
+
+    "Programming": "البرمجة",
+    "Foundations, problem solving and modern programming technologies.": "أساسيات البرمجة وحل المشكلات وتقنيات البرمجة الحديثة.",
+
+    "Requirements, UML, design and development practices.": "تحليل المتطلبات وUML والتصميم وممارسات تطوير البرمجيات.",
+
+    "Research": "البحث العلمي",
+    "A structured approach to technical learning and research-oriented thinking.": "منهج منظم للتعلم التقني والتفكير البحثي.",
+
+    "OUR MISSION": "رسالتنا",
+    "Learn with structure. Build with purpose.": "تعلّم بمنهجية. ابنِ بهدف.",
+
+    "Build a practical learning environment where students can understand concepts, practice consistently and turn knowledge into working projects.": "نبني بيئة تعليمية عملية تساعد الطلاب على فهم المفاهيم والتدرب باستمرار وتحويل المعرفة إلى مشروعات تعمل فعليًا.",
+
+    "Clarity": "الوضوح",
+    "Clear explanations and organized material.": "شرح واضح ومحتوى منظم.",
+
+    "Practice": "الممارسة",
+    "Exercises, quizzes and project work.": "تمارين وحل مشكلات ومشروعات تطبيقية.",
+
+    "Progress": "التطور",
+    "A learning path you can continue.": "مسار تعليمي منظم يمكنك الاستمرار والتطور من خلاله.",
+
+    "NEXT STEP": "الخطوة التالية",
+    "Continue learning with a clear path.": "واصل التعلم من خلال مسار واضح.",
+    "Explore available courses and choose the right starting point.": "استكشف الكورسات المتاحة واختر نقطة البداية المناسبة.",
+    "VIEW COURSES": "عرض الكورسات",
+
+    "CONTACT": "تواصل معنا",
+    "Let's talk about your learning path.": "لنتحدث عن مسارك التعليمي.",
+    "Questions about courses, registration or the learning workflow? Start with the registration form and we will guide you through the next step.": "لديك أسئلة عن الكورسات أو التسجيل أو طريقة التعلم؟ ابدأ من نموذج التسجيل وسنرشدك إلى الخطوة التالية.",
+    "START REGISTRATION": "ابدأ التسجيل",
+
+    "Registration": "التسجيل",
+    "Submit your course request through the academy's Google Form.": "أرسل طلب الكورس من خلال نموذج Google الرسمي للأكاديمية.",
+    "OPEN FORM →": "فتح النموذج →",
+
+    "YouTube": "يوتيوب",
+    "Use the academy's video channel for lessons and supporting content.": "استخدم قناة الأكاديمية للفيديوهات والدروس والمحتوى المساند.",
+    "WATCH INTRO": "شاهد المقدمة",
+    "WATCH INTRO →": "شاهد المقدمة →",
+
+    "Google Classroom": "Google Classroom",
+    "Approved students can continue their course workflow through Classroom.": "يمكن للطلاب المقبولين متابعة مسار الكورس من خلال Google Classroom.",
+    "VIEW COURSES →": "عرض الكورسات →",
+
+    "Need a course recommendation?": "تحتاج إلى ترشيح لكورس؟",
+    "Tell us your current level and target direction in the registration form so the next step can be clearer.": "أخبرنا بمستواك الحالي والاتجاه الذي تستهدفه في نموذج التسجيل لتكون الخطوة التالية أوضح.",
+    "REGISTER NOW": "سجّل الآن",
+
+    "Start your next step.": "ابدأ خطوتك التالية.",
+    "Explore courses, register, or continue to the course registration.": "استكشف الكورسات، وسجّل من خلال النموذج الرسمي.",
+
+    "Learning": "التعلم",
+    "mobile_courses_eyebrow": "الكورسات",
+    "mobile_courses_title": "اختر الكورس المناسب",
+    "mobile_courses_desc": "اختر المستوى، اطلع على التفاصيل، ثم سجّل من خلال نموذج Google.",
+
+    "Programming & Software Engineering Instructor | 6+ Years Teaching Experience": "مدرب البرمجة وهندسة البرمجيات | خبرة أكثر من 6 سنوات في التدريس",
+
+    "about_intro": "مدرب في مجال البرمجة وتكنولوجيا المعلومات، أمتلك خبرة تمتد لأكثر من 6 سنوات في التدريس والتدريب عبر البيئات الأونلاين والأوفلاين.",
+
+    "about_academic": "بخلفية أكاديمية في تكنولوجيا المعلومات، وحصولي على درجة الماجستير عام 2026، يجمع أسلوب التدريس بين الأساسيات الأكاديمية والخبرة العملية في تطوير البرمجيات.",
+
+    "6+ Years": "أكثر من 6 سنوات",
+    "Teaching experience in programming and information technology through online and offline training.": "خبرة في تدريس البرمجة وتكنولوجيا المعلومات من خلال التدريب الأونلاين والأوفلاين.",
+
+    "Master's Degree": "درجة الماجستير",
+    "Master's degree in Information Technology, completed in 2026.": "درجة الماجستير في تكنولوجيا المعلومات، تم الحصول عليها عام 2026.",
+
+    "Information Technology": "تكنولوجيا المعلومات",
+    "Academic background in Information Technology with programming, web development and database expertise.": "خلفية أكاديمية في تكنولوجيا المعلومات، مع خبرة في البرمجة وتطوير الويب وقواعد البيانات.",
+
+    "Practical Learning": "التعلم العملي",
+    "Learning through examples, exercises, projects and practical software development tasks.": "التعلم من خلال الأمثلة والتمارين والمشروعات والتطبيقات العملية في تطوير البرمجيات.",
+
+    "AREAS OF EXPERTISE": "مجالات الخبرة",
+    "What You Can Learn": "ماذا يمكنك أن تتعلم",
+
+    "The academy combines programming fundamentals with practical development and software engineering concepts.": "تجمع الأكاديمية بين أساسيات البرمجة والتطوير العملي ومفاهيم هندسة البرمجيات.",
+
+    "Programming fundamentals, problem solving, algorithms and modern programming languages.": "أساسيات البرمجة وحل المشكلات والخوارزميات ولغات البرمجة الحديثة.",
+
+    "HTML, CSS, JavaScript, PHP, JSON and practical web application development.": "HTML وCSS وJavaScript وPHP وJSON وتطوير تطبيقات الويب بشكل عملي.",
+
+    "Requirements analysis, UML, system modeling, design and structured software development.": "تحليل المتطلبات وUML ونمذجة الأنظمة والتصميم وتطوير البرمجيات بشكل منظم.",
+
+    "Databases": "قواعد البيانات",
+    "SQL, MySQL, SQL Server, SQLite, PostgreSQL and database design concepts.": "SQL وMySQL وSQL Server وSQLite وPostgreSQL ومفاهيم تصميم قواعد البيانات.",
+
+    "Python programming from fundamentals to practical problem solving and application development.": "برمجة Python بدايةً من الأساسيات وحتى حل المشكلات عمليًا وتطوير التطبيقات.",
+
+    "Structured technical thinking, academic research and technology-focused problem solving.": "التفكير التقني المنظم والبحث الأكاديمي وحل المشكلات المرتبطة بالتكنولوجيا.",
+
+    "ACADEMIC BACKGROUND": "الخلفية الأكاديمية",
+    "Academic Foundation": "الأساس الأكاديمي",
+
+    "The academy is built on an academic foundation in Information Technology, supported by continuous technical training and practical teaching experience.": "تعتمد الأكاديمية على خلفية أكاديمية في تكنولوجيا المعلومات، مدعومة بالتدريب التقني المستمر والخبرة العملية في التدريس.",
+
+    "Completed — 2026": "تم الحصول عليها — 2026",
+    "Bachelor of Computers & Information": "بكالوريوس الحاسبات والمعلومات",
+    "Information Technology Department": "قسم تكنولوجيا المعلومات",
+    "Suez University — 2017–2021": "جامعة السويس — 2017–2021",
+
+    "The goal is not simply to teach programming syntax. Students should understand how and why things work, practice what they learn, and gradually transform their knowledge into real software projects.": "الهدف ليس مجرد تعليم صياغة الأكواد البرمجية، بل مساعدة الطلاب على فهم كيفية عمل الأشياء ولماذا تعمل بهذه الطريقة، ثم ممارسة ما يتعلمونه وتحويل المعرفة تدريجيًا إلى مشروعات برمجية حقيقية.",
+
+    "Clear explanations and organized technical material.": "شرح واضح ومحتوى تقني منظم.",
+    "Exercises, problem solving and project-based learning.": "تمارين وحل مشكلات وتعلم قائم على المشروعات.",
+    "A structured learning path that grows with your skills.": "مسار تعليمي منظم يتطور مع نمو مهاراتك.",
+
+    "TEACHING EXPERIENCE": "الخبرة التدريسية",
+    "From concepts to real projects.": "من المفاهيم إلى المشروعات الحقيقية.",
+
+    "With six years of teaching experience across online and offline environments, the academy is designed around a practical learning approach: understand the concept, practice it, apply it, and build something with it.": "من خلال خبرة تمتد لأكثر من 6 سنوات في التدريس عبر البيئات الأونلاين والأوفلاين، تعتمد الأكاديمية على منهج عملي يقوم على فهم المفهوم، والتدرب عليه، وتطبيقه، ثم بناء مشروع حقيقي باستخدامه.",
+
+    "6+": "6+",
+    "YEARS OF TEACHING": "سنوات من الخبرة التدريسية",
+    "Online & Offline": "أونلاين وأوفلاين",
+
+    "Start your learning journey.": "ابدأ رحلتك التعليمية.",
+    "Explore the available tracks and choose the learning path that matches your goals and current level.": "استكشف المسارات التعليمية المتاحة واختر المسار الذي يتناسب مع أهدافك ومستواك الحالي."
+  }
+}

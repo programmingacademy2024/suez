@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <script>
+   tailwind.config={theme:{extend:{colors:{brand:{orange:'#f58220',orangeHover:'#e07110',green:'#8ec63f',darkGreen:'#1b4332',bgLight:'#f8faf7'}}}}}
+  </script>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Suez Programming Academy - Course Details
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script src="../js/config.js">
+  </script>
+ </head>
+ <body class="text-gray-800 flex flex-col items-center min-h-screen p-2 sm:p-4 md:p-6 lg:p-8">
+  <div class="page-container">
+   <div id="siteNavbar">
+   </div>
+   <main>
+    <section class="page-hero section">
+     <div class="max-w-6xl mx-auto">
+      <a class="inline-flex items-center gap-2 text-xs font-bold text-gray-500 hover:text-brand-orange" href="courses.html">
+       <i class="fa-solid fa-arrow-left rtl:rotate-180">
+       </i>
+       <span>
+        BACK TO COURSES
+       </span>
+      </a>
+      <div class="mt-6" id="courseHero">
+      </div>
+     </div>
+    </section>
+    <section class="section bg-white">
+     <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 space-y-5">
+       <div class="course-section-card">
+        <span class="badge">
+         WHAT YOU'LL LEARN
+        </span>
+        <h2 class="text-2xl font-black mt-4">
+         Course Skills
+        </h2>
+        <div class="grid sm:grid-cols-2 gap-3 mt-5" id="skills">
+        </div>
+       </div>
+       <div class="card p-7">
+        <span class="badge">
+         COURSE CONTENT
+        </span>
+        <h2 class="text-2xl font-black mt-4">
+         Progressive Learning
+        </h2>
+        <div class="space-y-4 mt-6" id="levelContent">
+        </div>
+       </div>
+      </div>
+      <aside class="card p-7 h-fit lg:sticky lg:top-24">
+       <div class="course-detail-icon" id="courseIcon">
+        <i class="fa-solid fa-code">
+        </i>
+       </div>
+       <p class="pill inline-flex mt-5">
+        COURSE
+       </p>
+       <h2 class="text-xl font-black mt-3" id="courseName">
+        Course
+       </h2>
+       <div class="course-meta mt-4">
+        <span class="pill" id="courseDuration">
+        </span>
+        <span class="pill" id="courseMode">
+        </span>
+        <span class="pill" id="coursePrice">
+        </span>
+       </div>
+       <button class="btn-primary w-full mt-6" id="enrollButton">
+        ENROLL NOW
+       </button>
+       <p class="text-[11px] text-gray-400 leading-5 mt-5">
+        Registration is completed through the academy's official Google Form.
+       </p>
+      </aside>
+     </div>
+    </section>
+   </main>
+   <footer class="border-t px-5 sm:px-10 py-7 text-xs text-gray-400 flex justify-between">
+    <span>
+     &copy; 2026 Suez Programming Academy
+    </span>
+    <span>
+     Learn. Build. Become.
+    </span>
+   </footer>
+  </div>
+  <div id="mobileEnrollBar" class="mobile-enroll-bar" aria-label="Course enrollment">
+    <span id="mobileEnrollLabel">ENROLL NOW</span>
+    <button type="button" id="mobileEnrollButton" class="btn-primary">ENROLL NOW</button>
+  </div>
+  <script src="../js/app.js">
+  </script>
+  <script>
+   document.addEventListener('spa:ready', () => {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('course') || 'web';
+      const course = window.SPA_COURSES?.[slug];
+      const selectedLevel = localStorage.getItem('spaSelectedLevel') || course?.level || 'Level 1';
+
+      if (!course) {
+        document.getElementById('courseHero').innerHTML = `
+          <div class="card p-8 text-center">
+            <div class="icon-box mx-auto"><i class="fa-solid fa-circle-question"></i></div>
+            <h1 class="text-2xl font-black mt-4">Course not found</h1>
+            <a href="courses.html" class="btn-primary inline-flex mt-5">VIEW ALL COURSES</a>
+          </div>`;
+        return;
+      }
+
+      localStorage.setItem('spaSelectedCourse', course.name);
+      document.title = `Suez Programming Academy - ${course.name}`;
+      document.getElementById('courseName').textContent = `${course.name} · ${selectedLevel}`;
+      document.getElementById('courseDuration').textContent = `Duration: ${course.duration}`;
+      document.getElementById('courseMode').textContent = `Mode: ${course.mode}`;
+      document.getElementById('coursePrice').textContent = `Price: ${course.price}`;
+      document.querySelector('#courseIcon i').className = course.icon;
+
+      document.getElementById('courseHero').innerHTML = `
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <span class="badge"><i class="fa-solid fa-book-open"></i> COURSE DETAILS</span>
+            <h1 class="text-4xl sm:text-5xl font-black mt-4">${course.name}<span class="block text-brand-orange text-2xl sm:text-3xl mt-2">${selectedLevel}</span></h1>
+            <p class="text-sm text-gray-500 leading-7 mt-5 max-w-xl">Build practical skills through clear lessons, exercises and projects.</p>
+            <div class="course-meta mt-5">
+              <span class="pill">${course.duration}</span>
+              <span class="pill">${course.mode}</span>
+              <span class="pill">${course.price}</span>
+            </div>
+            <div class="course-action-row mt-7">
+              <button id="heroEnroll" class="btn-primary">ENROLL NOW</button>
+              <a href="courses.html" class="btn-secondary">VIEW ALL COURSES</a>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden hero-photo bg-white">
+            <img class="course-detail-image" src="${course.image}" alt="${course.name}">
+          </div>
+        </div>`;
+
+      document.getElementById('skills').innerHTML = course.skills.map(skill => `
+        <div class="bg-white border border-gray-100 rounded-xl p-4 flex items-center gap-3">
+          <i class="fa-solid fa-circle-check text-brand-orange"></i>
+          <span class="font-bold text-sm">${skill}</span>
+        </div>`).join('');
+
+      document.getElementById('levelContent').innerHTML = [1, 2, 3].map(level => `
+        <div class="border border-gray-100 rounded-xl p-4 flex items-center justify-between gap-4 ${selectedLevel === `Level ${level}` ? 'selected-course' : ''}">
+          <div>
+            <p class="font-black">Level ${level}</p>
+            <p class="text-xs text-gray-500 mt-1">Structured lessons, practice and project work.</p>
+          </div>
+          <span class="pill">${course.duration}</span>
+        </div>`).join('');
+
+      const enroll = () => openGoogleRegistration(`${course.name} - ${selectedLevel}`);
+      document.getElementById('enrollButton').addEventListener('click', enroll);
+      document.getElementById('heroEnroll').addEventListener('click', enroll);
+      document.getElementById('mobileEnrollButton').addEventListener('click', enroll);
+      document.dispatchEvent(new CustomEvent('spa:dynamicRendered'));
+    });
+  </script>
+ </body>
+</html>

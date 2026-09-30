@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Suez Programming Academy - Contact
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&amp;family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <script>
+   tailwind.config={theme:{extend:{colors:{brand:{orange:'#f58220',green:'#8ec63f',darkGreen:'#1b4332'}}}}}
+  </script>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <script src="../js/config.js">
+  </script>
+ </head>
+ <body class="flex justify-center min-h-screen p-2 sm:p-4 md:p-6">
+   <div class="page-container">
+   <div id="siteNavbar">
+   </div>
+   <main>
+    <section class="page-hero section">
+     <div class="max-w-5xl mx-auto text-center">
+      <span class="badge">
+       CONTACT
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black mt-4">
+       Let's talk about your learning path.
+      </h1>
+      <p class="text-sm text-gray-500 leading-7 max-w-2xl mx-auto mt-4">
+       Questions about courses, registration or the learning workflow? Start with the registration form and we will guide you through the next step.
+      </p>
+      <a class="btn-primary inline-flex mt-6" href="#" onclick="openAcademyRegistration()">
+       START REGISTRATION
+      </a>
+     </div>
+    </section>
+    <section class="section">
+     <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-5">
+      <div class="card p-7">
+       <div class="icon-box">
+        <i class="fa-solid fa-file-signature">
+        </i>
+       </div>
+       <h3 class="font-black mt-4">
+        Registration
+       </h3>
+       <p class="text-xs text-gray-500 leading-6 mt-2">
+        Submit your course request through the academy's Google Form.
+       </p>
+       <a class="text-brand-orange text-xs font-black inline-block mt-4" href="#" onclick="openAcademyRegistration()">
+        OPEN FORM &rarr;
+       </a>
+      </div>
+      <div class="card p-7">
+       <div class="icon-box">
+        <i class="fa-brands fa-youtube">
+        </i>
+       </div>
+       <h3 class="font-black mt-4">
+        YouTube
+       </h3>
+       <p class="text-xs text-gray-500 leading-6 mt-2">
+        Use the academy's video channel for lessons and supporting content.
+       </p>
+       <button class="text-brand-orange text-xs font-black mt-4" onclick="openIntroVideo()">
+        WATCH INTRO &rarr;
+       </button>
+      </div>
+      <div class="card p-7">
+       <div class="icon-box">
+        <i class="fa-solid fa-chalkboard-user">
+        </i>
+       </div>
+       <h3 class="font-black mt-4">
+        Google Classroom
+       </h3>
+       <p class="text-xs text-gray-500 leading-6 mt-2">
+        Approved students can continue their course workflow through Classroom.
+       </p>
+       <a class="text-brand-orange text-xs font-black inline-block mt-4" href="courses.html">
+        VIEW COURSES &rarr;
+       </a>
+      </div>
+     </div>
+    </section>
+    <section class="section bg-[#f8faf7]">
+     <div class="max-w-5xl mx-auto card p-7 sm:p-9">
+      <h2 class="text-2xl font-black">
+       Need a course recommendation?
+      </h2>
+      <p class="text-sm text-gray-500 leading-7 mt-2">
+       Tell us your current level and target direction in the registration form so the next step can be clearer.
+      </p>
+      <a class="btn-primary inline-flex mt-5" href="#" onclick="openAcademyRegistration()">
+       REGISTER NOW
+      </a>
+     </div>
+    </section>
+    <section class="section" id="page-final-cta">
+     <div class="max-w-5xl mx-auto card p-7 sm:p-9 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+       <span class="badge">
+        NEXT STEP
+       </span>
+       <h2 class="text-2xl sm:text-3xl font-black mt-3">
+        Start your next step.
+       </h2>
+       <p class="text-sm text-gray-500 leading-7 mt-2 max-w-2xl">
+        Explore courses, register, or continue to the course registration.
+       </p>
+      </div>
+      <div class="flex flex-wrap gap-3 shrink-0">
+       <a class="btn-secondary" href="courses.html">
+        VIEW COURSES
+       </a>
+       <a class="btn-primary" href="#" onclick="openAcademyRegistration()">
+        REGISTER NOW
+       </a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="border-t px-5 sm:px-10 py-7 text-xs text-gray-400 flex justify-between">
+    <span>
+     &copy; 2026 Suez Programming Academy
+    </span>
+    <span>
+     Learn. Build. Become.
+    </span>
+   </footer>
+  </div>
+  <script src="../js/app.js">
+  </script>
+ </body>
+</html>

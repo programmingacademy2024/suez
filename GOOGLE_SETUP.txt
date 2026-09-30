@@ -1,0 +1,19 @@
+GOOGLE FORM SETUP
+
+Existing form URL is preserved in js/config.js.
+
+Course question from the official form:
+- Fundamentals of Programming
+- Web Development
+- Python Programming
+- Artificial Intelligence (AI)
+- Cybersecurity
+- Software Engineering
+
+Optional automatic course selection:
+1. Open the Google Form editor.
+2. Identify the entry ID of the "Select Course" question.
+3. Put it in js/config.js: courseEntryId: "entry.XXXXXXXXX"
+4. Test an ENROLL NOW button.
+
+If courseEntryId is left empty, the same official Google Form opens normally.

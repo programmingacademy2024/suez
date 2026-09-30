@@ -1,0 +1,36 @@
+<header class="page-nav sticky top-0 z-50 w-full px-4 sm:px-6 lg:px-10 py-3 sm:py-4">
+  <div class="nav-inner">
+    <a href="#" data-nav="home" class="brand-mark" aria-label="SUEZ Programming Code">
+      <span class="brand-top"><i class="fa-solid fa-code"></i> SUEZ</span>
+      <span class="brand-bottom">Programming Code</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#" data-nav="home" class="page-link" data-i18n="Home">Home</a>
+      <a href="#" data-nav="courses" class="page-link" data-i18n="Courses">Courses</a>
+      <a href="#" data-nav="about" class="page-link" data-i18n="About">About</a>
+      <a href="#" data-nav="contact" class="page-link" data-i18n="Contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="langToggleBtn" type="button" onclick="toggleLanguage()" class="language-toggle" aria-label="Change language">
+        <i class="fa-solid fa-globe"></i>
+        <span id="langLabel">العربية</span>
+      </button>
+
+      <button type="button" onclick="openAcademyRegistration()" class="join-button desktop-join" data-i18n="JOIN THE ACADEMY">JOIN THE ACADEMY</button>
+
+      <button id="mobileMenuBtn" type="button" class="mobile-menu-button" aria-label="Open navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="hidden mobile-nav-panel">
+  <a href="#" data-nav="home" class="mobile-link" data-i18n="Home">Home</a>
+  <a href="#" data-nav="courses" class="mobile-link" data-i18n="Courses">Courses</a>
+  <a href="#" data-nav="about" class="mobile-link" data-i18n="About">About</a>
+  <a href="#" data-nav="contact" class="mobile-link" data-i18n="Contact">Contact</a>
+  <button type="button" onclick="openAcademyRegistration()" class="join-button mobile-join" data-i18n="JOIN THE ACADEMY">JOIN THE ACADEMY</button>
+</div>

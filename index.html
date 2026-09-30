@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Suez Programming Academy - Home Page.
+  </title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Google Fonts: Inter & Cairo -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;family=Fira+Code:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Cairo', 'sans-serif'],
+            arabic: ['Cairo', 'sans-serif'],
+            code: ['Fira Code', 'monospace'],
+          },
+          colors: {
+            brand: {
+              orange: '#f58220',
+              orangeHover: '#e07110',
+              green: '#8ec63f',
+              greenLight: '#a2e048',
+              darkGreen: '#1b4332',
+              bgLight: '#f8faf7',
+            }
+          },
+          boxShadow: {
+            'custom-card': '0 10px 30px -5px rgba(0, 0, 0, 0.08)',
+            'floating': '0 20px 40px -15px rgba(0, 0, 0, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+   /* CUSTOM CSS STYLES */
+    body {
+      font-family: 'Inter', 'Cairo', sans-serif;
+      overflow-x: hidden;
+      background-color: #f8faf7;
+    }
+    [dir="rtl"] body {
+      font-family: 'Cairo', 'Inter', sans-serif;
+    }
+
+    .green-circle-bg {
+      background: linear-gradient(135deg, #a2e048 0%, #76bc21 100%);
+      border-radius: 50%;
+    }
+
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes float-reverse {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+
+    .animate-float {
+      animation: float-slow 4s ease-in-out infinite;
+    }
+    .animate-float-delayed {
+      animation: float-reverse 5s ease-in-out infinite 1s;
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+ </head>
+ 
+ <body class="text-gray-800 flex flex-col items-center justify-start min-h-screen p-2 sm:p-4 md:p-6 lg:p-8">
+  <!-- Main Website Container -->
+  <div class="w-full max-w-[1360px] bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden relative border border-gray-100 flex flex-col min-h-[90vh]">
+   <!-- Navbar -->
+   <!-- Shared Academy Navbar -->
+   <div id="siteNavbar">
+   </div>
+   <!-- Mobile Navigation Drawer -->
+   <main class="relative flex-grow flex flex-col justify-between overflow-hidden">
+    <!-- SVG Vector Background -->
+    <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+     <svg class="absolute top-0 right-0 w-full h-full text-green-50/50" fill="none" preserveaspectratio="none" viewbox="0 0 1000 700">
+      <path d="M 400,0 Q 650,200 1000,100 L 1000,0 Z" fill="#f2f9ed">
+      </path>
+      <path d="M 0,350 Q 500,600 1000,300 L 1000,700 L 0,700 Z" fill="#ffffff">
+      </path>
+     </svg>
+    </div>
+    <div class="container mx-auto px-4 sm:px-8 lg:px-12 pt-4 sm:pt-8 pb-8 z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center flex-grow">
+     <!-- Left Hero Text Content -->
+     <div class="lg:col-span-6 space-y-5 sm:space-y-8 text-center lg:text-left rtl:lg:text-right">
+      <div class="space-y-3 sm:space-y-4">
+       <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-tight">
+        <span data-i18n="hero_title_1">Learn. Build.</span>
+        <br/>
+        <span class="text-black" data-i18n="hero_title_2">Become.</span><br/>
+       </h1>
+       <p class="text-gray-500 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 font-normal" data-i18n="hero_desc">
+        Suez Programming Academy provides practical programming training designed to help you learn the fundamentals, build real projects, and develop the skills you need to grow in the technology field.
+       </p>
+      </div>
+      <!-- Hero CTAs -->
+      <div class="flex flex-wrap items-center justify-center lg:justify-start rtl:lg:justify-start gap-3 sm:gap-5 pt-2">
+       <button class="bg-brand-orange hover:bg-brand-orangeHover text-white font-bold text-xs sm:text-sm px-6 sm:px-8 py-3.5 sm:py-4 rounded-md uppercase tracking-wider shadow-lg shadow-orange-500/20 transform hover:-translate-y-0.5 transition-all duration-200" data-i18n="btn_register" onclick="openAcademyRegistration()">
+        JOIN THE ACADEMY
+       </button>
+       <button class="flex items-center space-x-3 rtl:space-x-reverse text-gray-800 hover:text-brand-orange font-bold text-xs sm:text-sm px-3 sm:px-4 py-3 group transition-colors" onclick="openVideoModal()">
+        <span class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-all shadow-sm">
+         <i class="fa-solid fa-play ml-0.5 rtl:mr-0.5 rtl:ml-0 text-xs">
+         </i>
+        </span>
+        <span class="tracking-wider uppercase" data-i18n="btn_video">
+         WATCH INTRO
+        </span>
+       </button>
+      </div>
+     </div>
+     <!-- Right Visual Banner Side -->
+     <div class="lg:col-span-6 relative flex justify-center items-center py-8 lg:py-0 min-h-[380px] sm:min-h-[460px]">
+      <!-- Large Lime Green Backdrop Circle -->
+      <div class="absolute w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[420px] lg:h-[420px] rounded-full right-4 sm:right-10 top-1/2 -translate-y-1/2 shadow-xl overflow-hidden opacity-90">
+       <img alt="علم السويس" class="w-full h-full object-cover" src="assets/img/suez-flag.jpg"/>
+      </div>
+      <!-- Main Portrait Model Container -->
+      <div class="relative z-10 w-full max-w-[380px] sm:max-w-[460px] flex justify-center">
+       <!-- Student Model Image with Laptop -->
+       <img alt="Student with laptop" class="w-[85%] sm:w-[90%] object-cover rounded-b-full filter drop-shadow-2xl relative z-10" onerror="this.src='https://placehold.co/400x500/8ec63f/ffffff?text=Suez+Student'" src="assets/img/student.png"/>
+       <!-- Floating Badge 1: New Discount Badge (Top Left) -->
+      <div class="absolute -top-6 left-2 sm:top-0 sm:left-4 z-20 bg-white/95 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-floating max-w-[180px] sm:max-w-[200px] border border-gray-50 animate-float">
+        <span class="inline-block bg-orange-100 text-brand-orange text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">
+         New
+        </span>
+        <p class="text-xs font-extrabold text-gray-800 leading-snug">
+         Get 33.33% Off all Courses
+        </p>
+       </div>
+       <!-- Floating Badge 2: Award Badge (Right Side) -->
+       <div class="absolute top-1/3 -right-2 sm:right-2 z-20 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-floating flex items-center space-x-3 border border-gray-50 animate-float-delayed">
+        <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-500">
+         <i class="fa-solid fa-award text-base">
+         </i>
+        </div>
+        <div>
+         <p class="text-xs font-bold text-gray-900 leading-tight">
+          Best Academy
+         </p>
+         <p class="text-[11px] font-medium text-gray-600 leading-tight">
+          Awards
+         </p>
+        </div>
+       </div>
+       <!-- Floating Badge 3: Our Happy Customers (Bottom Right) -->
+       <div class="absolute bottom-4 left-1/4 z-20 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-2xl shadow-floating border border-gray-50">
+        <p class="text-[11px] font-bold text-gray-800 mb-1.5 text-center">
+         Our Happy Students
+        </p>
+        <div class="flex items-center justify-center -space-x-2">
+         <img alt="User" class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&amp;auto=format&amp;fit=crop&amp;q=80"/>
+         <img alt="User" class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&amp;auto=format&amp;fit=crop&amp;q=80"/>
+         <img alt="User" class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&amp;auto=format&amp;fit=crop&amp;q=80">
+          <img alt="User" class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&amp;auto=format&amp;fit=crop&amp;q=80"/>
+          <div class="w-7 h-7 rounded-full border-2 border-white bg-sky-400 text-white text-[10px] font-bold flex items-center justify-center">
+           +
+          </div>
+         </img>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </main>
+   <!-- Mobile Courses Preview: intentionally hidden on desktop -->
+   <section class="md:hidden w-full bg-[#f8faf7] border-t border-gray-100 py-8" id="mobileCoursesPreview">
+    <div class="px-4 sm:px-6">
+     <div class="flex items-end justify-between gap-4 mb-5">
+      <div class="flex-1 min-w-0">
+       <p class="text-[10px] font-black tracking-[0.16em] text-brand-orange uppercase" data-i18n="mobile_courses_eyebrow">OUR COURSES</p>
+        <h2 class="text-2xl font-black text-gray-900 mt-1 whitespace-nowrap" data-i18n="mobile_courses_title">
+            Choose your Course
+        </h2>
+       <p class="text-xs text-gray-500 mt-1 leading-relaxed" data-i18n="mobile_courses_desc">Start with a level, view the details, then register through Google Forms.</p>
+      </div>
+      <a href="pages/courses.html" class="shrink-0 text-xs font-extrabold text-brand-orange" data-nav="courses" data-i18n="VIEW ALL COURSES">VIEW ALL COURSES</a>
+     </div>
+     <div id="mobileCourseCards" class="grid grid-cols-1 gap-3"></div>
+    </div>
+   </section>
+   <!-- Technologies Section -->
+   <section class="w-full bg-white pt-6 pb-10 z-20 border-t border-gray-50" id="courses">
+    <div class="container mx-auto px-4 sm:px-8 md:px-12 text-center">
+     <div class="max-w-2xl mx-auto mb-6 space-y-2">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">
+       <span data-i18n="sec_materials_1">
+        What materials can you
+       </span>
+       <span class="text-brand-orange" data-i18n="sec_materials_2">
+        study?
+       </span>
+      </h2>
+      <p class="text-xs sm:text-sm text-gray-500 max-w-xl mx-auto font-normal px-2" data-i18n="sec_materials_desc">
+       You will be given access to over 60 programming technologies with 2000 material lists, and will continue to grow with new material uploads.
+      </p>
+     </div>
+     <!-- Category Filter Tabs -->
+     <div class="flex flex-wrap justify-center gap-2 mb-6 text-xs sm:text-sm font-medium">
+      <button class="tech-tab active px-3.5 py-1.5 rounded-full bg-brand-orange text-white shadow-sm transition-all" data-cat="all" data-i18n="cat_all" onclick="filterTech('all')">
+       All Materials
+      </button>
+      <button class="tech-tab px-3.5 py-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-all" data-cat="fund" data-i18n="cat_fund" onclick="filterTech('fund')">
+       Fundamentals
+      </button>
+      <button class="tech-tab px-3.5 py-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-all" data-cat="front" data-i18n="cat_front" onclick="filterTech('front')">
+       Web Frontend
+      </button>
+      <button class="tech-tab px-3.5 py-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-all" data-cat="back" data-i18n="cat_back" onclick="filterTech('back')">
+       Backend &amp; DB
+      </button>
+      <button class="tech-tab px-3.5 py-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-all" data-cat="mobile" data-i18n="cat_mobile" onclick="filterTech('mobile')">
+       Mobile &amp; API
+      </button>
+     </div>
+     <!-- Tech Track Carousel -->
+     <div class="relative max-w-6xl mx-auto flex items-center">
+      <button class="absolute left-0 lg:-left-6 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white shadow-md border border-gray-100 flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none" id="slideLeft">
+       <i class="fa-solid fa-arrow-left rtl:rotate-180 text-xs sm:text-sm">
+       </i>
+      </button>
+      <div class="flex items-center space-x-3 sm:space-x-4 rtl:space-x-reverse overflow-x-auto no-scrollbar py-4 px-8 sm:px-10 scroll-smooth w-full" id="carouselTrack">
+       <!-- C++ -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[130px] hover:shadow-md transition-all hover:-translate-y-1" data-category="fund">
+        <i class="fa-solid fa-file-code text-2xl text-blue-600">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         C++
+        </span>
+       </div>
+       <!-- C# -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[130px] hover:shadow-md transition-all hover:-translate-y-1" data-category="fund">
+        <i class="fa-solid fa-code text-2xl text-purple-600">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         C#
+        </span>
+       </div>
+       <!-- Python -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[150px] hover:shadow-md transition-all hover:-translate-y-1" data-category="fund">
+        <i class="fa-brands fa-python text-2xl text-sky-600">
+        </i>
+        <span class="text-slate-700 font-bold text-sm sm:text-base">
+         Python&trade;
+        </span>
+       </div>
+       <!-- OOP -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[130px] hover:shadow-md transition-all hover:-translate-y-1" data-category="fund">
+        <i class="fa-solid fa-cubes text-2xl text-indigo-500">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         OOP
+        </span>
+       </div>
+       <!-- HTML -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[130px] hover:shadow-md transition-all hover:-translate-y-1" data-category="front">
+        <i class="fa-brands fa-html5 text-2xl text-orange-600">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         HTML5
+        </span>
+       </div>
+       <!-- CSS -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[130px] hover:shadow-md transition-all hover:-translate-y-1" data-category="front">
+        <i class="fa-brands fa-css3-alt text-2xl text-blue-500">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         CSS3
+        </span>
+       </div>
+       <!-- JavaScript -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[150px] hover:shadow-md transition-all hover:-translate-y-1" data-category="front">
+        <i class="fa-brands fa-js text-2xl text-amber-400">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         JavaScript
+        </span>
+       </div>
+       <!-- React -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[140px] hover:shadow-md transition-all hover:-translate-y-1" data-category="front">
+        <i class="fa-brands fa-react text-2xl text-sky-400 animate-spin" style="animation-duration: 10s;">
+        </i>
+        <span class="text-sky-500 font-bold text-sm sm:text-base">
+         React
+        </span>
+       </div>
+       <!-- PHP -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[130px] hover:shadow-md transition-all hover:-translate-y-1" data-category="back">
+        <i class="fa-brands fa-php text-2xl text-indigo-600">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         PHP
+        </span>
+       </div>
+       <!-- MySQL -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[140px] hover:shadow-md transition-all hover:-translate-y-1" data-category="back">
+        <i class="fa-solid fa-database text-2xl text-sky-700">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         MySQL
+        </span>
+       </div>
+       <!-- Node.js -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[140px] hover:shadow-md transition-all hover:-translate-y-1" data-category="back">
+        <i class="fa-brands fa-node-js text-2xl text-emerald-600">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         Node.js
+        </span>
+       </div>
+       <!-- Flutter -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[140px] hover:shadow-md transition-all hover:-translate-y-1" data-category="mobile">
+        <svg class="w-6 h-6 text-sky-400 shrink-0" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M14.314 0L2.3 12 6 15.7 18 3.714l-3.686-3.714zM21.7 11.314l-3.7 3.686 3.7 3.7 3.686-3.7-3.686-3.686zm-7.386 7.386L10.614 15 6.9 18.714l3.7 3.7 3.714-3.714z">
+         </path>
+        </svg>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         Flutter
+        </span>
+       </div>
+       <!-- REST API -->
+       <div class="tech-card flex-none bg-white rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-sm border border-gray-100 flex items-center space-x-3 rtl:space-x-reverse min-w-[140px] hover:shadow-md transition-all hover:-translate-y-1" data-category="mobile">
+        <i class="fa-solid fa-network-wired text-2xl text-teal-600">
+        </i>
+        <span class="text-gray-800 font-bold text-sm sm:text-base">
+         REST API
+        </span>
+       </div>
+      </div>
+      <button class="absolute right-0 lg:-right-6 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-orange text-white shadow-md flex items-center justify-center hover:bg-brand-orangeHover transition-all transform hover:scale-105 active:scale-95 focus:outline-none" id="slideRight">
+       <i class="fa-solid fa-arrow-right rtl:rotate-180 text-xs sm:text-sm">
+       </i>
+      </button>
+     </div>
+    </div>
+   </section>
+  </div>
+  <!-- Enrollment Form Modal -->
+  <!-- Video Modal -->
+  <div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4" id="videoModal">
+   <div class="bg-black rounded-2xl max-w-3xl w-full relative overflow-hidden shadow-2xl">
+    <button class="absolute top-3 right-3 rtl:right-auto rtl:left-3 text-white bg-black/50 hover:bg-black rounded-full w-9 h-9 flex items-center justify-center z-10" onclick="closeVideoModal()">
+     <i class="fa-solid fa-xmark text-lg">
+     </i>
+    </button>
+    <div class="relative pt-[56.25%] w-full">
+     <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute inset-0 w-full h-full" frameborder="0" id="videoIframe" src="" title="Suez Programming Academy Video">
+     </iframe>
+    </div>
+   </div>
+  </div>
+  <!-- Toast Notification -->
+  <div class="fixed bottom-6 right-6 rtl:right-auto rtl:left-6 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center space-x-3 rtl:space-x-reverse transform translate-y-20 opacity-0 transition-all duration-300 z-50" id="toast">
+   <i class="fa-solid fa-circle-check text-brand-orange text-lg">
+   </i>
+   <span class="text-sm font-medium" id="toastMessage">
+    Action completed successfully!
+   </span>
+  </div>
+  <script src="js/config.js">
+  </script>
+  <!-- MAIN JAVASCRIPT APPLICATION LOGIC -->
+  <script>
+   document.addEventListener("spa:ready", () => {
+      const carouselTrack = document.getElementById("carouselTrack");
+      const slideLeft = document.getElementById("slideLeft");
+      const slideRight = document.getElementById("slideRight");
+
+      if (carouselTrack && slideLeft && slideRight) {
+        slideLeft.addEventListener("click", () => {
+          const amount = document.documentElement.dir === "rtl" ? 250 : -250;
+          carouselTrack.scrollBy({ left: amount, behavior: "smooth" });
+        });
+
+        slideRight.addEventListener("click", () => {
+          const amount = document.documentElement.dir === "rtl" ? -250 : 250;
+          carouselTrack.scrollBy({ left: amount, behavior: "smooth" });
+        });
+      }
+
+      window.filterTech = (category) => {
+        document.querySelectorAll(".tech-tab").forEach((button) => {
+          const active = button.dataset.cat === category;
+          button.classList.toggle("bg-brand-orange", active);
+          button.classList.toggle("text-white", active);
+          button.classList.toggle("bg-gray-100", !active);
+          button.classList.toggle("text-gray-600", !active);
+        });
+
+        document.querySelectorAll(".tech-card").forEach((card) => {
+          card.style.display = category === "all" || card.dataset.category === category ? "flex" : "none";
+        });
+      };
+
+      window.openIntroVideo = () => {
+        const videoUrl = window.SPA_CONFIG?.youtube?.introEmbedUrl || "";
+        if (!videoUrl) {
+          alert(document.documentElement.lang === "ar" ? "فيديو المقدمة غير مُعد بعد." : "The intro video is not configured yet.");
+          return;
+        }
+        const modal = document.getElementById("videoModal");
+        const iframe = document.getElementById("videoIframe");
+        if (!modal || !iframe) return;
+        iframe.src = videoUrl;
+        modal.classList.remove("hidden");
+      };
+
+      window.closeVideoModal = () => {
+        const modal = document.getElementById("videoModal");
+        const iframe = document.getElementById("videoIframe");
+        if (iframe) iframe.src = "";
+        if (modal) modal.classList.add("hidden");
+      };
+    });
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
